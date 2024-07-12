@@ -1,0 +1,187 @@
+*{
+   padding: 0px;
+   margin: 0px;
+}
+
+html{
+   background-color: #000000;
+   color: #FFFFFF;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 10px;
+}
+
+h1{
+   font-size: 3.2rem;
+   margin-bottom: 4rem;
+}
+
+header {
+   padding-bottom: 10px !important;
+}
+
+.max-width{
+   max-width: 129.4rem;
+   padding: 2rem;
+   margin: 0px auto;
+   display: flex;
+   flex-direction: column;
+   place-items: center;
+}
+
+.grid-tabela{
+   display: grid;
+   grid-template-columns: repeat(18, 1fr);
+   grid-template-rows: auto auto auto auto auto auto 85px auto auto;
+   gap: 0.2rem;
+   width: 129.4rem;
+}
+
+.elemento{
+   display: flex;
+   box-sizing: border-box;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-color: #000000;
+   border: 0.2rem  solid;
+   padding: 0.4rem;
+   height: 7rem;
+   width: 7rem;
+   border-radius: 0.4rem;
+   position: relative;
+   transition:.2s;
+}
+
+.elemento:hover{
+	transform: scale(1.3);
+	cursor: pointer;
+	z-index: 1;
+}
+
+.elemento span {
+   position: absolute;
+   font-size: 1rem;
+   top: 0.2rem;
+   left: 0.2rem;
+}
+
+.elemento h2{
+   font-size: 2rem;
+}
+
+.elemento p {
+   font-size: 1.1rem;
+}
+
+.elemento h2 + p {
+   text-align: center;
+   margin-bottom: 0.2rem;
+}
+
+.span-16{
+   grid-column: span 16;
+}
+
+.span-10{
+   grid-column: span 10;
+}
+
+.span-3{
+   grid-column: span 3;
+}
+
+.expandir-lantanideo, .expandir-actinidio{
+   padding: 0.4rem 0rem 0rem 0.35rem;
+}
+
+.expandir-lantanideo span{
+   position: relative;
+}
+
+.expandir-lantanideo span::after{
+   content: '';
+   display: block;
+   background: url('./lantanideos-seta.svg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 24px;
+   height: 175px;
+   z-index: 1;
+   position: absolute;
+   top: 45%;
+   left: calc(100% + 0.1rem)
+}
+
+.expandir-actinidio span{
+   position: relative;
+}
+
+.expandir-actinidio span::after{
+   content: '';
+   display: block;
+   background: url('./actinidios-seta.svg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 3.4rem;
+   height: 18.5rem;
+   position: absolute;
+   top: 1.8rem;
+   left: 40%;
+}
+
+/* Tipos de elemento */
+:root{
+   --nao-metal: #b4d264;
+   --metal-alcalino: #F5C864;
+   --semimetal: #44A69C;
+   --outro-metal: #91BDCB;
+   --lantanideo: #90E3E9;
+   --gas-nobre: #64B4E1;
+   --metal-alcalino-terroso: #F0E65A;
+   --halogenio: #70CBEB;
+   --metal-de-transicao: #EB8E8E;
+   --actinidio: #DCADD6;
+}
+
+.nao-metal{
+   color: var(--nao-metal);
+}
+
+.metal-alcalino{
+   color: var(--metal-alcalino);
+}
+
+.semimetal{
+   color: var(--semimetal);
+}
+
+.outro-metal{
+   color: var(--outro-metal);
+}
+
+.lantanideo{
+   color: var(--lantanideo);
+}
+
+.gas-nobre{
+   color: var(--gas-nobre);
+}
+
+.metal-alcalino-terroso{
+   color: var(--metal-alcalino-terroso);
+}
+
+.halogenio{
+   color: var(--halogenio);
+}
+
+.metal-de-transicao{
+   color: var(--metal-de-transicao);
+}
+
+.actinidio{
+   color: var(--actinidio);
+}
+
+
+
